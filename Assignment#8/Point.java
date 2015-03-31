@@ -44,6 +44,7 @@ public class Point {
     }
 
     // test client
+    /*
     public static void main(String[] args) {
 
         // get dimensions
@@ -62,4 +63,5 @@ public class Point {
             p.draw();
         }
     }
+    */
 }
