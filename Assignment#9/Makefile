@@ -1,10 +1,19 @@
 COMPILE := javac-introcs 
 
-all: BlobFinder.class Luminance.class
+all: BeadTracker.class BlobFinder.class Luminance.class
+
+BeadTracker.class: BeadTracker.java BlobFinder.class Luminance.class
+	@echo "#####################################" 
+	@echo "start compile BeadTracker.java..." 
+	@echo "#####################################" 
+	$(COMPILE) BeadTracker.java
+	@echo "#####################################" 
+	@echo "compile BeadTracker.java completed!!!" 
+	@echo "#####################################" 
 
 BlobFinder.class: BlobFinder.java Luminance.class
 	@echo "#####################################" 
-	@echo "start compile BlobFinder.java" 
+	@echo "start compile BlobFinder.java..." 
 	@echo "#####################################" 
 	$(COMPILE) BlobFinder.java
 	@echo "#####################################" 
